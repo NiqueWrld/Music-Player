@@ -1,0 +1,167 @@
+#header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 260px;
+    height: 100vh;
+    background-color: var(--mainBg);
+    border-right: 1px dotted var(--black300);
+    box-shadow: 0 0 10px var(--black300);
+    overflow-y: auto;
+
+    h1 {
+        padding: 2rem 2rem 1rem 2rem;
+
+        a {
+            font-size: 26px;
+            font-weight: 900;
+            color: var(--pointColor);
+            font-family: var(--fontJ);
+            text-shadow: 2px 2px var(--black300);
+        }
+    }
+
+    h2 {
+        font-family: var(--fontJ);
+        font-size: 12px;
+        font-weight: 900;
+        color: var(--black700);
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        padding: 2rem 2rem 1rem 2rem;
+    }
+
+    ul {   
+        li {
+            color: var(--black500);
+            font-weight: 400;
+            font-size: 20px;
+            cursor: pointer;
+            padding: 16px 0;
+            border-left: 5px solid transparent;
+            font-weight: 900;
+            display: flex;
+            align-items: center;
+
+            a {
+                display: block;
+                text-decoration: none;
+                color: inherit;
+                font-family: var(--fontE);
+            }
+
+            button {
+                margin: 10px;
+                background: none;
+                border: none;
+                cursor: pointer;
+
+                svg {
+                    width: 20px;
+                    height: 20px;
+                    color: var(--pointColor);
+                }
+            }
+
+            .icon {
+                width: 20px;
+                height: 20px;
+                background-size: 20px;
+                background-repeat: no-repeat;
+                display: inline-block;
+                margin-right: 14px;
+                vertical-align: -4px;
+                border-radius: 3px;
+                margin-left: 20px;
+            }
+
+            &:nth-child(1) .icon {
+                background-image: url(../img/icon-melon.jpg);
+            }
+
+            &:nth-child(2) .icon {
+                background-image: url(../img/icon-bugs.jpg);
+            }
+
+            &:nth-child(3) .icon {
+                background-image: url(../img/icon-apple.jpg);
+            }
+
+            &:nth-child(4) .icon {
+                background-image: url(../img/icon-genie.jpg);
+            }
+
+            &:nth-child(5) .icon {
+                background-image: url(../img/icon-bill.jpg);
+            }
+
+            &:hover {
+                background-color: var(--pointBg);
+            }
+
+            &.active {
+                border-left: 5px solid var(--pointColor);
+                background-color: var(--pointBg);
+            }
+
+            .icon2 {
+                margin-left: 20px;
+                width: 20px;
+                height: 20px;
+                display: inline-block;
+                margin-right: 14px;
+
+                svg {
+                    vertical-align: -5px;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+    }
+
+    .input-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+
+        input {
+            width: 100%;
+            padding: 0.5rem;
+            margin-bottom: 0.5rem;
+            border: 1px solid var(--black300);
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .button-group {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+
+            button {
+                flex: 1;
+                padding: 0.5rem;
+                border: none;
+                background-color: #7D57FF;
+                color: white;
+                cursor: pointer;
+                margin: 0 0.25rem;
+                border-radius: 5px;
+
+                &:hover {
+                    background-color: #6947D1; // 10% darker than #7D57FF
+                }
+
+                &:nth-child(2) {
+                    background-color: var(--black300);
+
+                    &:hover {
+                        background-color: #222222; // 10% darker than var(--black300)
+                    }
+                }
+            }
+        }
+    }
+}

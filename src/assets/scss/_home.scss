@@ -1,0 +1,115 @@
+// _home.scss 파일 상단에 Sass 변수를 정의합니다.
+$pointColor: #FF6347;
+
+:root {
+    --pointColor: #{$pointColor};
+}
+
+.home {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--mainBg);
+
+    .home-header {
+        text-align: center;
+        margin-bottom: 20px;
+
+        h1 {
+            font-size: 2.5em;
+            color: var(--pointColor);
+            font-family: var(--fontJ);
+            text-shadow: 2px 2px var(--black300);
+        }
+
+        p {
+            font-size: 1.2em;
+            color: var(--black600);
+            font-family: var(--fontE);
+        }
+    }
+
+    .home-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .home-section {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+
+        h2 {
+            font-size: 1.5em;
+            color: var(--black600);
+            margin-bottom: 10px;
+            font-family: var(--fontJ);
+            text-shadow: 1px 1px var(--black300);
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+
+            li {
+                margin: 5px 20px;
+                font-size: 1.2em;
+                font-family: var(--fontE);
+            }
+
+            a {
+                color: var(--pointColor);
+                text-decoration: none;
+            }
+
+            a:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    .random-song-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 40px;
+
+        .random-song-button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100px;
+            height: 100px;
+            background-color: var(--pointColor);
+            color: white;
+            border: none;
+            border-radius: 50%;
+            cursor: pointer;
+            font-size: 2em;
+            margin-bottom: 10px;
+            box-shadow: 0 4px var(--black300);
+
+            &:hover {
+                background-color: darken($pointColor, 10%); // Sass 변수를 사용하여 색상 변경
+            }
+
+            svg {
+                width: 50px;
+                height: 50px;
+                color: white;
+            }
+        }
+
+        p {
+            font-size: 1.2em;
+            color: var(--black600);
+            font-family: var(--fontE);
+        }
+    }
+}

@@ -1,0 +1,9 @@
+#main {
+    margin-left: 260px; // 헤더의 폭 만큼 마진 추가
+    padding: 20px;
+    background-color: var(--mainBg);
+
+    &.header-collapsed {
+        margin-left: 0; // 헤더가 접힐 때 마진 제거
+    }
+}

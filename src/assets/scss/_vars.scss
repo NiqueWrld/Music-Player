@@ -1,0 +1,46 @@
+:root {
+    --fontJ: "theJamsil";
+    --fontEu: "eduAll";
+    --fontE: "RetroFont"; // 레트로 느낌의 폰트로 변경
+    --mainBg: #F2F2F2; // 밝은 회색 배경색
+    --pointColor: #FF7F50; // 코랄색
+    --pointBg: #FFF8DC; // 코넛 크림색
+
+    // --mainBg: #F6F8F9;
+    // --pointColor: #7D57FF;
+    // --pointBg: #ededff;
+
+    --black: #000;
+    --black100: #111;
+    --black200: #222;
+    --black300: #333;
+    --black400: #444;
+    --black500: #555;
+    --black600: #666;
+    --black700: #797979;
+
+    --white: #fff;
+    --white100: #f9f9f9;
+    --white200: #eeeeee;
+    --white300: #dfdfdf;
+    --white400: #cfcfcf;
+    --white500: #c0c0c0;
+
+    // 폰트 셋팅
+    font-family: var(--fontE);
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 400;
+
+    // 폰트 최적화
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+
+    @media (max-width: 800px) {
+        font-size: 14px;
+        line-height: 1.4;
+    }
+}
